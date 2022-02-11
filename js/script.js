@@ -273,6 +273,6 @@ window.addEventListener('load',()=>{
     else introDesktopAnimation() */
 
     //Looping animation for a hero image
-    heroImgLoop()
+//    heroImgLoop()
 })
 
