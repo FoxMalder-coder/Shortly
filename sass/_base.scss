@@ -63,6 +63,7 @@ body {
 
 main {
     background-color: $color-background;    
+    perspective: 1000px;
 }
 
 .container {
@@ -75,8 +76,7 @@ main {
     }
 
     @include respond(phone){        
-        margin: 0 3rem;
-        overflow-x: hidden;
+        margin: 0 3rem;           
     }
 }
 

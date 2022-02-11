@@ -22,7 +22,8 @@ body {
   position: relative; }
 
 main {
-  background-color: #eff1f7; }
+  background-color: #eff1f7;
+  perspective: 1000px; }
 
 .container {
   max-width: 111rem;
@@ -33,8 +34,7 @@ main {
       margin: 0 8rem; } }
   @media only screen and (max-width: 37.5em) {
     .container {
-      margin: 0 3rem;
-      overflow-x: hidden; } }
+      margin: 0 3rem; } }
 
 ::selection {
   background-color: #9ce3e3; }
@@ -363,6 +363,12 @@ main {
   @media only screen and (max-width: 37.5em) {
     .header {
       margin-bottom: 22rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .header .container {
+      overflow-x: hidden;
+      margin: 0;
+      padding-top: 5rem;
+      width: 100vw; } }
   .header__hero-section {
     width: 100%;
     display: flex;

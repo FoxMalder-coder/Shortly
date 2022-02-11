@@ -4,6 +4,15 @@
     @include respond(phone) {
         margin-bottom: 22rem;
     }
+
+    .container {
+        @include respond(phone){     
+            overflow-x: hidden;
+            margin: 0;
+            padding-top: 5rem;        
+            width: 100vw;    
+        }
+    }
   
     &__hero-section {
         width: 100%;
