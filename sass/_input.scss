@@ -1,5 +1,5 @@
 .section-input {         
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.6rem;    
 
     .container {
         padding-top: 0rem;
@@ -12,6 +12,7 @@
 
         @include respond(phone){        
             margin: 0 3rem;
+            overflow: initial;
         }
     }
 }
@@ -212,7 +213,7 @@
     transform: translateY(-50%);
     margin-bottom: -6rem;
     display: flex;
-    z-index: 1;
+    z-index: 1000;
     perspective: 1000px;
 
     @include respond(tab-port-2) {

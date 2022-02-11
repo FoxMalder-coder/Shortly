@@ -38,7 +38,7 @@ main {
 
 @media only screen and (max-width: 37.5em) {
   .container.mobile-overflow {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0 3rem;
     padding-top: 5rem;
@@ -435,7 +435,8 @@ main {
         margin: 0 8rem 8rem 8rem; } }
     @media only screen and (max-width: 37.5em) {
       .section-input .container {
-        margin: 0 3rem; } }
+        margin: 0 3rem;
+        overflow: initial; } }
 
 .links-container {
   width: 100%;
@@ -581,7 +582,7 @@ main {
   transform: translateY(-50%);
   margin-bottom: -6rem;
   display: flex;
-  z-index: 1;
+  z-index: 1000;
   perspective: 1000px; }
   @media only screen and (max-width: 53em) {
     .form {
