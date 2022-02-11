@@ -34,8 +34,8 @@ https://ibb.co/5YQhbvq
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/miroslavdurin/Shortly/tree/main)
-- Live Site URL: [Add live site URL here](https://shortly-mdurin.netlify.app/)
+- Solution URL: [GitHub](https://github.com/miroslavdurin/Shortly/tree/main)
+- Live Site URL: [Live Site on Netlify](https://shortly-mdurin.netlify.app/)
 
 ## My process
 
@@ -72,22 +72,22 @@ I also feel that the script.js code is a little bit "spaghetti", I will try to i
 
 ### Useful resources
 
-- [Example resource 1](https://www.udemy.com/course/advanced-css-and-sass/) - This is a course that thought me most of what I know about HTML and CSS/SCSS.
+- [Udemy - Jonas Schmedtmann course](https://www.udemy.com/course/advanced-css-and-sass/) - This is a course that thought me most of what I know about HTML and CSS/SCSS.
 
-- [Example resource 2](https://www.udemy.com/course/the-complete-javascript-course/) - This is one of courses which thought me most of what I know about JS.
+- [Udemy - Jonas Schmedtmann course](https://www.udemy.com/course/the-complete-javascript-course/) - This is one of courses which thought me most of what I know about JS.
 
-- [Example resource 3](https://www.udemy.com/course/javascript-beginners-complete-tutorial/) - Another JS course that was very usefull in developing my JS skills, I've learned some NodeJs here as well.
+- [Udemy - Colt Steele and Stephen Grider course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/) - Another JS course that was very usefull in developing my JS skills, I've learned some NodeJs here as well.
 
-- [Example resource 4](https://developedbyed.com/p/the-ultimate-javascript-animation-course) - This is a course I've bought that thought me most of GSAP animations, especially how to animate svg's.
+- [DevEd's course](https://developedbyed.com/p/the-ultimate-javascript-animation-course) - This is a course I've bought that thought me most of GSAP animations, especially how to animate svg's.
 
-- [Example resource 5](https://www.youtube.com/c/TheNetNinja) - Great YT channel with a lot of interesting content.
+- [Net Ninja YouTube channel](https://www.youtube.com/c/TheNetNinja) - Great YouTube channel with a lot of interesting content.
 
-- [Example resource 6](https://www.youtube.com/c/DevEd) - Another great YT channel with lots of frontend dev content.
+- [DevEd YouTube channel](https://www.youtube.com/c/DevEd) - Another great YouTube channel with lots of frontend dev content.
 
-- [Example resource 7](https://www.youtube.com/c/WrongAkram) - This YT channel has a little bit more advanced content, mostly using React along with GSAP or Framer Motion libraries.
+- [WrongAkram YouTube channel](https://www.youtube.com/c/WrongAkram) - This YouTube channel has a little bit more advanced content, mostly using React along with GSAP or Framer Motion libraries.
 
 ## Author
 
-- Website - [Miroslav](https://github.com/miroslavdurin)
-- Frontend Mentor - [@miroslavdurin](https://www.frontendmentor.io/profile/miroslavdurin)
+- Website - [My GitHub Page](https://github.com/miroslavdurin)
+- Frontend Mentor - [https://www.frontendmentor.io/profile/miroslavdurin]
 
