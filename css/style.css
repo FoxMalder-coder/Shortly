@@ -19,11 +19,11 @@ body {
   font-weight: 500;
   line-height: 1.6;
   overflow-x: hidden;
-  position: relative; }
+  position: relative;
+  max-width: 100vw; }
 
 main {
-  background-color: #eff1f7;
-  perspective: 1000px; }
+  background-color: #eff1f7; }
 
 .container {
   max-width: 111rem;
