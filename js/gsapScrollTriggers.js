@@ -16,7 +16,7 @@ export const mobileScrollTriggers = ()=> {
             start: 'center center'
         },
         rotate: 90, 
-        x: 200,  
+        opacity: 0,  
         transformOrigin: 'right', 
         duration: 1.35, 
         ease:"bounce.out"

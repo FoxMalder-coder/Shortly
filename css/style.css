@@ -435,8 +435,7 @@ main {
         margin: 0 8rem 8rem 8rem; } }
     @media only screen and (max-width: 37.5em) {
       .section-input .container {
-        margin: 0 3rem;
-        overflow: initial; } }
+        margin: 0 3rem; } }
 
 .links-container {
   width: 100%;
