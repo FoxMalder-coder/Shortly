@@ -1,0 +1,116 @@
+.heading-primary {
+    margin-bottom: 4.5rem;
+
+    @include respond(tab-port-2) {
+        text-align: center;
+    }
+    
+    &--main {
+        color: $color-primary--2;
+        letter-spacing: -2px;
+        line-height: 9rem;
+        font-size: 8rem;
+        font-weight: 700;
+        display: block;
+
+        @include respond(tab-port-2) {
+            margin-bottom: 2rem;
+        }
+
+        @include respond(phone) {
+            font-size: 5.25rem;
+            line-height: 48px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &--sub {
+        color: $color-violet;
+        letter-spacing: 0.15px;
+        line-height: 3.6rem;
+        font-size: 2.2rem;
+        font-weight: 500;
+        display: block;
+
+        @include respond(tab-port-2) {
+            font-size: 2.25rem;
+            line-height: 30px;
+        }
+    }
+}
+
+.heading-secondary {
+    &--main {
+        display: block;
+        font-size: 4rem;
+        font-weight: 700;
+        color: $color-dark-blue;
+        letter-spacing: -1px;
+        line-height: 4.8rem;
+        margin-bottom: 1.8rem;
+
+        @include respond(tab-port-2){
+            font-size: 3.5rem;
+            line-height: 38px;
+            letter-spacing: -0.7px;
+        }
+    }
+
+    &--sub {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $color-violet;
+        line-height: 3.2rem;
+        letter-spacing: 0.12px;
+
+        @include respond(tab-port-2){
+            font-size: 2rem;
+            line-height: 28px;
+            letter-spacing: 0.11px;
+        }
+    }
+
+    &--white {
+        display: block;
+        font-size: 4rem;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: -1px;
+        line-height: 4.8rem;
+        margin-bottom: 4.2rem;
+        padding-top: 0;
+
+        @include respond(tab-port-2){        
+            font-size: 3.5rem;
+            line-height: 48px;
+            letter-spacing: -0.7px;
+        }
+    }
+}
+
+.heading-tertiary {
+    color: $color-primary--2;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3.3rem;
+    margin-bottom: 1.2rem;
+    margin-top: -4.5rem;
+
+    @include respond(tab-port-2){
+        font-size: 2.75rem;
+        line-height: 33px;
+    }
+}
+
+.paragraph {
+    color: $color-violet;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+
+    @include respond(tab-port-2) {
+        font-size: 2rem;
+        line-height: 26px;
+    }
+}

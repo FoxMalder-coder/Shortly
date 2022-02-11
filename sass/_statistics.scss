@@ -1,0 +1,118 @@
+.statistics {   
+
+    &__text{
+        text-align: center;
+        width: 54rem;
+        margin: 0 auto 13rem;
+
+        @include respond(tab-port-2){
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 10rem;
+        }
+
+        @include respond(phone){            
+            padding: 0 6rem;
+        }
+
+    }
+
+    &__details {
+        --scaleX: 100%;
+        --scaleY: 100%;
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+
+        @include respond(tab-port-2){
+            margin-top: 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: calc(50% + 4.4rem) ;            
+            width: 100%;
+            height: 0.8rem;
+            background-color: $color-primary--1;
+            transform: scaleX(var(--scaleX));
+            transform-origin: left;
+
+            @include respond(tab-port-2){
+                top: 0; 
+                width: 0.8rem;
+                height: 100%;
+                transform: scaleY(var(--scaleY));
+                transform-origin: top;
+            }
+        }
+    }
+
+    &__card {
+        background-color: #fff;  
+        border-radius: 5px;  
+        padding: 3.2rem;     
+        z-index: 1;
+        
+        @include respond(tab-port-2){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 3.2rem 10rem ;
+        }
+
+        @include respond(phone){
+            padding: 4rem;
+        }
+        
+        &:nth-child(2) {
+            transform: translateY(4.4rem);
+        }
+
+        &:nth-child(3) {
+            transform: translateY(8.8rem);
+        }
+    }   
+
+    &__icon {
+        width: 8.8rem;
+        height: 8.8rem;
+        background-color: $color-primary--2;
+        border-radius: 50rem;
+        transform: translateY(-85%);        
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        
+        svg {         
+            width: 40px;
+            height: 40px; 
+            overflow: visible;   
+            
+        }       
+    }
+
+    &__card:last-child &__icon {
+        svg{
+            display: block;
+            width: 48px;
+            height: 48px;  
+        }
+    }    
+}
+
+.section-statistics {
+    padding-bottom: 20rem;
+
+    @include respond(phone){
+        margin-top: 5rem;
+    }
+}

@@ -1,0 +1,21 @@
+.section-cta {
+    background-color: $color-primary--2;
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5.7rem 5.7rem 7rem;
+
+    @include respond(tab-port-2) {
+        padding: 5.7rem 0 7rem;
+    }
+
+    .container {
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "url-shortening-page",
+  "version": "1.0.0",
+  "description": "Url shortening page",
+  "default": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel index.html --open chrome",
+    "build": "parcel build index.html",
+    "sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Miroslav",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.20.3",
+    "gsap": "^3.9.1",
+    "images": "^3.2.3",
+    "node-sass": "^6.0.1",
+    "regenerator-runtime": "^0.13.9"
+  }
+}

@@ -1,0 +1,79 @@
+.header {
+    margin-bottom: 17rem;   
+
+    @include respond(phone) {
+        margin-bottom: 22rem;
+    }
+  
+    &__hero-section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;        
+        margin: 8rem auto;      
+        
+        @include respond(tab-port-2) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        @include respond(phone) {
+            margin: 2rem auto;     
+        }
+    }
+
+    &__text-content {              
+        min-width: 51%;
+
+        @include respond(tab-port-2) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5rem;
+        }
+
+        @include respond(phone) {            
+            padding: 0 6rem;
+        }
+
+    }
+
+    &__image {
+        display: block;
+        width: 100%;        
+        transform: translateX(10rem);
+        overflow: visible;
+
+        svg {
+            width: 610px;
+            height: 482px;
+            overflow: visible;
+
+            path#Path_31,
+            path#Path_30 {
+                display: none;
+            }
+
+            use {
+                width: 610px;
+                height: 482px;                
+            }
+        }
+
+        @include respond(tab-land){
+            transform: translateX(6rem);
+            width: 75%;
+        }
+
+        @include respond(tab-port-2) {            
+            transform: none;
+            width: 100%;    
+            margin: 0 auto;
+        }
+
+        @include respond(phone) {               
+            width: 150%;       
+            transform: translateX(-5rem);        
+        }
+    }
+}

@@ -1,0 +1,166 @@
+.footer {
+    background-color: #232127;
+    padding: 6rem 0 8rem 0;  
+
+    .container {
+        display: flex;
+        flex-direction: row;        
+        justify-content: space-between;
+        padding-top: 0;
+
+        @include respond(tab-land){
+            margin: 0 8rem;
+        }
+
+        @include respond(tab-port-2){            
+            flex-direction: column;
+            align-items: center;
+        }           
+
+        @include respond(phone) {
+            text-align: center;
+        }        
+    }    
+
+    &__logo-box {      
+        margin-right: 5rem;  
+        cursor: pointer;
+        svg {            
+            fill: #fff;
+            width: 121px;
+            height: 33px;
+        }
+
+        @include respond(tab-port-2) {
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            margin: 1rem auto 6.5rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;      
+        
+        @include respond(tab-port-1) {
+            gap: 8rem;
+        }   
+        
+        
+        @include respond(phone){        
+            flex-direction: column;
+            align-items: center;  
+            gap: 0;
+        }
+
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 46rem;
+        
+        @include respond(phone){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        color: #fff;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 2.2rem;
+
+        @include respond(phone) {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__item:last-child {
+        @include respond(phone) {
+            margin-bottom: 5rem;
+        }
+    }
+    
+
+    &__link {
+        text-decoration: none;
+        color: $color-gray;
+        font-size: 1.5rem;
+        font-weight: 500;
+        transition: all .6s;
+
+        @include respond(phone) {
+            font-size: calc(2rem - 1px);            
+        }
+
+        &:hover {
+            color: $color-primary--1;
+        }
+    }    
+
+    &__icons {        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;    
+        align-items: flex-start;
+
+        @include respond(tab-port-2) {
+            flex-direction: column;
+        }
+        
+        @include respond(phone){
+            display: block;
+            margin-top: 1rem;
+        }
+    }
+
+    &__icons-link {    
+        &:not(:last-child) {
+            margin-right: 2.4rem;
+
+            @include respond(tab-land){
+                margin-right: 2rem;
+            }
+            @include respond(tab-port-1) {
+                margin-right: 1.4rem;
+            }
+
+            @include respond(tab-port-2) {
+                margin-bottom: 1.5rem;
+            }            
+        }
+        
+        svg {
+            fill: #fff;
+            width: 2.4rem;
+            height: 2.4rem;
+            display: inline-flex;
+            transition: all .6s;            
+        }
+
+        &:nth-child(2) {
+            svg {
+                height: 1.95rem;
+            }
+        }
+
+        &:hover svg{
+            fill: $color-primary--1;
+        }
+    }
+}
