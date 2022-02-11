@@ -25,7 +25,8 @@ body {
       overflow-x: hidden;
       margin: 0;
       padding: 0 3rem;
-      padding-top: 5rem; } }
+      padding-top: 5rem;
+      max-width: 100%; } }
 
 main {
   background-color: #eff1f7;
@@ -369,11 +370,6 @@ main {
   @media only screen and (max-width: 37.5em) {
     .header {
       margin-bottom: 22rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .header .container {
-      overflow-x: hidden;
-      margin: 0;
-      padding-top: 5rem; } }
   .header__hero-section {
     width: 100%;
     display: flex;
