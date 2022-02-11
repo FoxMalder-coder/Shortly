@@ -20,13 +20,6 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   position: relative; }
-  @media only screen and (max-width: 37.5em) {
-    body .container.head {
-      overflow-x: hidden;
-      margin: 0;
-      padding: 0 3rem;
-      padding-top: 5rem;
-      max-width: 100%; } }
 
 main {
   background-color: #eff1f7;
@@ -42,6 +35,14 @@ main {
   @media only screen and (max-width: 37.5em) {
     .container {
       margin: 0 3rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .container.mobile-overflow {
+    overflow: hidden;
+    margin: 0;
+    padding: 0 3rem;
+    padding-top: 5rem;
+    max-width: 100%; } }
 
 ::selection {
   background-color: #9ce3e3; }
