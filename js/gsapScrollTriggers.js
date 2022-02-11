@@ -99,7 +99,7 @@ export const mobileScrollTriggers = ()=> {
             start: 'top center'
         },
         opacity: 0,       
-        duration: 0.7, 
+        duration: 2, 
         stagger: 0.15
     })
 }
