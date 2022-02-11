@@ -18,6 +18,7 @@ export const mobileScrollTriggers = ()=> {
         rotate: 90, 
         opacity: 0, 
         x: -100, 
+        display: 'none',
         transformOrigin: 'right', 
         duration: 1.35, 
         ease:"bounce.out"
@@ -94,7 +95,7 @@ export const mobileScrollTriggers = ()=> {
 
     gsap.from('.footer__logo-box, .footer__list, .footer__icons-link', {
         scrollTrigger: {
-            trigger: '.section-cta',
+            trigger: '.footer',
             start: 'top center'
         },
         opacity: 0,       

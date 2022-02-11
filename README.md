@@ -1,22 +1,25 @@
-# Frontend Mentor - Shortly URL shortening API Challenge
+# Frontend Mentor - Shortly URL shortening API Challenge solution
 
-![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this landing page, integrate with the [shrtcode API](https://app.shrtco.de/) and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - Shorten any valid URL
@@ -25,72 +28,66 @@ Your users should be able to:
 - Receive an error message when the `form` is submitted if:
   - The `input` field is empty
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+https://ibb.co/5YQhbvq
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Add solution URL here](https://github.com/miroslavdurin/Shortly/tree/main)
+- Live Site URL: [Add live site URL here](https://shortly-mdurin.netlify.app/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- SCSS modules and mixins
+- Flexbox
+- GSAP
+- Parcel
+- Fetch API and async/await
 
-## Building your project
+### What I learned
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+I've learned a lot in this project. It started as a simple project at first, but I came up with some interesting ideas. Even though they seemed daunting at first, after some time I managed to put them all to life.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+The biggest challenge was to put all gsap animations to work smoothly. Even though it seemed simple at first, there were quite some challenges that emerged. Most of the challenges came from trying to make things responsive on all devices.
 
-## Deploying your project
+I've created 2 sets of animations, one for a desktop, and the other one for screens smaller then 850px. Probably the toughest challenge was to overcome the fact that mobile devices don't take {overflow: hidden} into account if it is set on a body or html tag. I realized that after I uploaded the site on Netlify.
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+I have also added a delete button which appears from the right side on big devices, and is set on the top right corner on smaller devices.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+What I'm mostly proud of is that site is running smoothly without any noticable major bug. There might be some issues which I'll tackle later.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+What I'm not most proud of is code quality. I have a feeling that the code could have some improvements, even though I've put lots of comments, mainly in js files.
 
-## Create a custom `README.md`
+I'll put 2 versions of code on a GitHub, one without animations, only for screenshot purposses.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### Continued development
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+There is a subttle bug with initial animation. In case that screen gets resized during a logo fill, it will probably land on a wrong spot, that's because it uses getBoundingClientRect() function to get x and y coordinates, which is being read at the initial load. I'll probably write resize event listener function to fix that.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+I also feel that the script.js code is a little bit "spaghetti", I will try to implement MVC architecture soon.
 
-## Submitting your solution
+### Useful resources
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+- [Example resource 1](https://www.udemy.com/course/advanced-css-and-sass/) - This is a course that thought me most of what I know about HTML and CSS/SCSS.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- [Example resource 2](https://www.udemy.com/course/the-complete-javascript-course/) - This is one of courses which thought me most of what I know about JS.
 
-## Sharing your solution
+- [Example resource 3](https://www.udemy.com/course/javascript-beginners-complete-tutorial/) - Another JS course that was very usefull in developing my JS skills, I've learned some NodeJs here as well.
 
-There are multiple places you can share your solution:
+- [Example resource 4](https://developedbyed.com/p/the-ultimate-javascript-animation-course) - This is a course I've bought that thought me most of GSAP animations, especially how to animate svg's.
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+- [Example resource 5](https://www.youtube.com/c/TheNetNinja) - Great YT channel with a lot of interesting content.
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+- [Example resource 6](https://www.youtube.com/c/DevEd) - Another great YT channel with lots of frontend dev content.
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+- [Example resource 7](https://www.youtube.com/c/WrongAkram) - This YT channel has a little bit more advanced content, mostly using React along with GSAP or Framer Motion libraries.
 
-## Got feedback for us?
+## Author
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+- Website - [Miroslav](https://github.com/miroslavdurin)
+- Frontend Mentor - [@miroslavdurin](https://www.frontendmentor.io/profile/miroslavdurin)
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
