@@ -67,6 +67,9 @@ main {
   .nav__logo {
     width: 120px;
     height: 27px;
+    stroke: black;
+    stroke-width: 0.5px;
+    fill: transparent;
     overflow: visible;
     stroke-dasharray: 180;
     stroke-dashoffset: 180;
@@ -425,7 +428,7 @@ main {
   margin-bottom: 1.6rem; }
   .section-input .container {
     padding-top: 0rem;
-    margin-bottom: 12rem;
+    margin-bottom: 7rem;
     perspective: 1000px; }
     @media only screen and (max-width: 75em) {
       .section-input .container {

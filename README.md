@@ -62,8 +62,6 @@ What I'm mostly proud of is that site is running smoothly without any noticable 
 
 What I'm not most proud of is code quality. I have a feeling that the code could have some improvements, even though I've put lots of comments, mainly in js files.
 
-I'll put 2 versions of code on a GitHub, one without animations, only for screenshot purposses.
-
 ### Continued development
 
 There is a subttle bug with initial animation. In case that screen gets resized during a logo fill, it will probably land on a wrong spot, that's because it uses getBoundingClientRect() function to get x and y coordinates, which is being read at the initial load. I'll probably write resize event listener function to fix that.
