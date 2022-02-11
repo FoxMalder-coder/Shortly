@@ -222,6 +222,8 @@
     @include respond(phone) {
         padding: 3rem;    
         margin-bottom: -8rem;    
+        background-image: url('../images/bg-shorten-mobile.svg');
+        background-repeat: no-repeat;
     }
 
     &__input {

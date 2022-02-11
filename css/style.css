@@ -586,7 +586,9 @@ main {
   @media only screen and (max-width: 37.5em) {
     .form {
       padding: 3rem;
-      margin-bottom: -8rem; } }
+      margin-bottom: -8rem;
+      background-image: url("../images/bg-shorten-mobile.svg");
+      background-repeat: no-repeat; } }
   .form__input {
     padding: 1.4rem 3.4rem;
     flex: 1;
@@ -744,6 +746,9 @@ main {
   @media only screen and (max-width: 53em) {
     .section-cta {
       padding: 5.7rem 0 7rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-cta {
+      background-image: url("../images/bg-boost-mobile.svg"); } }
   .section-cta .container {
     padding-top: 0; }
 
