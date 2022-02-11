@@ -367,8 +367,7 @@ main {
     .header .container {
       overflow-x: hidden;
       margin: 0;
-      padding-top: 5rem;
-      width: 100vw; } }
+      padding-top: 5rem; } }
   .header__hero-section {
     width: 100%;
     display: flex;
