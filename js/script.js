@@ -239,7 +239,7 @@ window.addEventListener('click', e=>{
 window.addEventListener('load',()=>{    
 
     //Removing .intro-hide class from some elements and setting scroll trigger functions
-    setTimeout(()=>{
+    /* setTimeout(()=>{
         document.querySelectorAll('.links-container').forEach(link=>link.classList.remove('intro-hide'));         
         footer.classList.remove('intro-hide');  
         sectionStatistics.classList.remove('intro-hide');  
@@ -249,27 +249,28 @@ window.addEventListener('load',()=>{
         if(screenWidth<849) mobileScrollTriggers()
         else desktopScrollTriggers();
         
-    }, 500)
+    }, 500) */
 
-    /* document.querySelectorAll('.links-container').forEach(link=>link.classList.remove('intro-hide'));         
+    document.querySelectorAll('.links-container').forEach(link=>link.classList.remove('intro-hide'));         
         footer.classList.remove('intro-hide');  
         sectionStatistics.classList.remove('intro-hide');         
-        sectionInput.classList.remove('intro-hide'); */
-                
+        sectionInput.classList.remove('intro-hide');
+        sectionCta.classList.remove('intro-hide');         
+
 
     //Scrolling to top of the page in case of refresh
     gsap.to(window, {scrollTo: {x:0, y:0}, duration:0.5});
     //Making sure there is no side bar and that there is no twitch 
     //when a side bar appears
-    gsap.set('body',{overflowY:'hidden', maxWidth:'100vw', paddingRight:'17px'});
+//    gsap.set('body',{overflowY:'hidden', maxWidth:'100vw', paddingRight:'17px'});
     
     navList.classList.remove('intro-hide');
     navRightSide.classList.remove('intro-hide');
     headerHero.classList.remove('intro-hide');  
         
     //Selecting intro animation based on a screen width
-    if(screenWidth<849) introMobileAnimation() 
-    else introDesktopAnimation()
+   /*  if(screenWidth<849) introMobileAnimation() 
+    else introDesktopAnimation() */
 
     //Looping animation for a hero image
     heroImgLoop()

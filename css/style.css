@@ -67,9 +67,6 @@ main {
   .nav__logo {
     width: 120px;
     height: 27px;
-    stroke: black;
-    stroke-width: 0.5px;
-    fill: transparent;
     overflow: visible;
     stroke-dasharray: 180;
     stroke-dashoffset: 180;
