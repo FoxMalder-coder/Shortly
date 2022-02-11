@@ -16,7 +16,8 @@ export const mobileScrollTriggers = ()=> {
             start: 'center center'
         },
         rotate: 90, 
-        opacity: 0,  
+        opacity: 0, 
+        x: -100, 
         transformOrigin: 'right', 
         duration: 1.35, 
         ease:"bounce.out"
@@ -96,8 +97,7 @@ export const mobileScrollTriggers = ()=> {
             trigger: '.section-cta',
             start: 'top center'
         },
-        opacity: 0,
-        y: -100,
+        opacity: 0,       
         duration: 0.7, 
         stagger: 0.15
     })
