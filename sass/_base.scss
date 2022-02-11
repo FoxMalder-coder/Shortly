@@ -59,6 +59,15 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
+
+    .container.head {
+        @include respond(phone){     
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0 3rem;
+            padding-top: 5rem;   
+        }
+    }
 }
 
 main {
